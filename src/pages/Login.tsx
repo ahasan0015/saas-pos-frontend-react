@@ -13,6 +13,7 @@ export default function Login() {
             alert('লগইন সফল!');
             window.location.href = '/dashboard';
         } catch (err) {
+            console.error(err);
             alert('লগইন ব্যর্থ হয়েছে!');
         }
     };
